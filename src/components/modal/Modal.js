@@ -1,3 +1,6 @@
+//#################################################
+//###########      Modal Component    #############
+//#################################################
 import React, { useRef, useEffect } from "react";
 import { createPortal } from "react-dom";
 import PropTypes from "prop-types";
@@ -9,25 +12,14 @@ import {
   ModalBody,
   ModalFooter,
 } from "./Modal.styled";
-const usePortal = () => {
-  const modalRef = useRef(null);
+import usePortal from "./usePortal";
 
-  useEffect(() => {
-    document.body.appendChild(modalRef.current);
-  }, []);
-
-  function getModal() {
-    if (!modalRef.current) {
-      modalRef.current = document.getElementById("modal-root");
-    }
-    return modalRef.current;
-  }
-  return getModal();
-};
-
-//#################################################
-//###########      Modal           ################
-//#################################################
+/**
+ *
+ * @param {any} props
+ * @returns {Modal} With all children inside it
+ *
+ */
 
 const Modal = (props) => {
   const { onToggleModal, children, modalSize, ...restProps } = props;
