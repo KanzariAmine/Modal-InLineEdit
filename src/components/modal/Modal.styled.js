@@ -9,10 +9,10 @@ export const WrapperContainer = styled.div`
   height: 100vh;
   width: 100vw;
   padding: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   flex-direction: column;
-  z-index: 1;
+  z-index: 99999999;
 `;
 export const animateModal = keyframes`{
   from {top:-300px; opacity:0}
