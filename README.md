@@ -22,4 +22,4 @@ Run app
 ```sh
 $ yarn start
 ```
-[Live Demo](https://modal-in-line-edit.vercel.app/)
+### [Live Demo](https://modal-in-line-edit.vercel.app/)
